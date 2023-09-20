@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convert your images into ASCII art easily.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <link rel="icon" href="/AG.ico" type="image/x-icon">
+  <title>ASCII Art Generator</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">ASCII Art Generator</h1>
+    <h2 id="subtitle">Image to ASCII Art</h2>
+  </header>
+  <main>
+
+    <form action="/" method="POST" enctype="multipart/form-data">
+      <input type="file" accept="image/*" name="image" id="upload" required>
+      <label for="upload" class="btn">Choose an Image</label>
+      <button type="submit" class="btn">Convert</button>      
+    </form>
+
+    <% if (asciiArt && asciiArt.trim() !== '') { %>
+      <div id="asciiContainer">
+          <pre id="asciiOutput"><%= asciiArt %></pre>
+          <button id="copyButton">Copy ASCII Art</button>
+      </div>
+    <% } %>
+    
+  </main>
+  <footer>
+    <p id="copyright">© 2023. ASCII Art Generator All rights reserved. | <a href="privacy.html" id="pri">Privacy</a></p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const copyButton = document.getElementById("copyButton");
+        const asciiOutput = document.getElementById("asciiOutput");
+
+        copyButton.addEventListener("click", function() {
+            navigator.clipboard.writeText(asciiOutput.innerText).then(function() {
+                alert("ASCII Art copied to clipboard!");
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+                alert("Failed to copy ASCII Art!");
+            });
+        });
+    });
+
+    const fileInput = document.getElementById("upload");
+    const fileLabel = document.querySelector("label[for='upload']");
+
+    fileInput.addEventListener("change", function() {
+        if (this.files && this.files.length > 0) {
+            fileLabel.textContent = this.files[0].name;
+        } else {
+            fileLabel.textContent = "Choose an Image";
+        }
+    });
+
+  </script>
+</body>
+</html>

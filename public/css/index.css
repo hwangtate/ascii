@@ -10,15 +10,6 @@ body {
   color: #ffffff;
   margin: 0px;
   padding: 0px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  display: flex;           /* body를 flex 컨테이너로 만듭니다. */
-  flex-direction: column;  /* 주 축을 세로로 설정합니다. */
-  height: 100vh;           /* 전체 높이를 차지하도록 설정합니다. */
-  justify-content: space-between; /* 시작과 끝 사이에 공간을 더합니다. */
 }
 
 /*헤더*/
@@ -94,7 +85,7 @@ form button[type="submit"] {
   text-align: center;
   font-size: 12px;
   font-weight: 400px;
-  margin-top: auto;      /* 상위 요소의 하단에 배치합니다. */
+  margin-top: 30px;      /* 상위 요소의 하단에 배치합니다. */
   margin-bottom: 10px;   /* 화면 하단에서 10px 높이에 놓습니다. */
 }
 
@@ -143,6 +134,7 @@ pre {
 a#pri:hover {
   text-decoration: underline;  /* 마우스를 올렸을 때 밑줄을 표시합니다. */
 }
+
 /* 작은 화면 (예: 핸드폰)을 위한 스타일 */
 @media only screen and (max-width: 600px) {
   body {
@@ -153,15 +145,4 @@ a#pri:hover {
       font-size: 32px; /* 제목 크기를 줄입니다. */
   }
 
-  main {
-      padding: 10px; /* 작은 화면에서 패딩을 추가하여 콘텐츠가 화면 가장자리에 닿지 않도록 합니다. */
-  }
-
-  #asciiContainer {
-      max-width: 60vw; /* 화면 너비의 90%로 최대 너비를 제한합니다. */
-  }
-
-  pre {
-      max-height: 300px; /* 작은 화면에서 아스키 아트의 높이를 제한합니다. */
-  }
 }

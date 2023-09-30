@@ -78,6 +78,9 @@ form button[type="submit"] {
   /* 나머지 스타일은 .btn 클래스에서 상속됩니다 */
 }
 
+.size{
+  margin-bottom: 50px;
+}
 
 /*바닥*/
 #copyright{

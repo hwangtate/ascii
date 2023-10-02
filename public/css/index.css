@@ -197,7 +197,7 @@ a#pri:hover {
   }
 
   pre {
-    font-size: 5px; /* or whatever size you find appropriate */
+    font-size: 1px; /* or whatever size you find appropriate */
     max-width: 100%;
     max-height: 1000px; /* Adjust as needed */
   }

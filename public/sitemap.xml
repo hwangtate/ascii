@@ -9,18 +9,48 @@
 
 <url>
   <loc>https://asciiartgenerator.org/</loc>
-  <lastmod>2023-10-02T01:22:25+00:00</lastmod>
+  <lastmod>2023-10-02T07:24:12+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://asciiartgenerator.org/meme.html</loc>
-  <lastmod>2023-10-02T01:21:56+00:00</lastmod>
+  <lastmod>2023-10-02T07:18:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://asciiartgenerator.org/privacy.html</loc>
   <lastmod>2023-09-21T10:06:25+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asciiartgenerator.org/cat.html</loc>
+  <lastmod>2023-10-02T07:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asciiartgenerator.org/dog.html</loc>
+  <lastmod>2023-10-02T07:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asciiartgenerator.org/animal.html</loc>
+  <lastmod>2023-10-02T07:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asciiartgenerator.org/baby.html</loc>
+  <lastmod>2023-10-02T07:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asciiartgenerator.org/person.html</loc>
+  <lastmod>2023-10-02T07:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://asciiartgenerator.org/best.html</loc>
+  <lastmod>2023-10-02T07:18:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 

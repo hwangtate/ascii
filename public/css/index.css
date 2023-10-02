@@ -30,10 +30,10 @@ body {
   text-decoration: none;
   background-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red, orange, yellow, green, blue, indigo, violet);
   background-size: 200% 100%;
-  color: transparent;
   background-clip: text;
   animation: rainbowMove 5s linear infinite;
   -webkit-background-clip: text;
+  color: transparent;
   transition: transform 0.3s ease;
 }
 
@@ -108,16 +108,6 @@ form button[type="submit"] {
   margin-bottom: 50px;
 }
 
-/*바닥*/
-#copyright{
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 400px;
-  margin-top: 30px;      /* 상위 요소의 하단에 배치합니다. */
-  margin-bottom: 10px;   /* 화면 하단에서 10px 높이에 놓습니다. */
-}
-
 #asciiContainer {
   text-align: center;
   margin-top: 20px;  /* Convert 버튼과의 간격을 조절 */
@@ -151,6 +141,7 @@ pre {
   font-family: 'Courier New', monospace;
 }
 
+/*footer*/
 #pri{
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -160,8 +151,39 @@ pre {
   text-decoration: none;
 }
 
+#copyright{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400px;
+  margin-top: 30px;      /* 상위 요소의 하단에 배치합니다. */
+  margin-bottom: 10px;   /* 화면 하단에서 10px 높이에 놓습니다. */
+}
+
 a#pri:hover {
   text-decoration: underline;  /* 마우스를 올렸을 때 밑줄을 표시합니다. */
+}
+
+/*밈 아스키 아트 아카이브*/
+.link-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around; /* 링크 사이에 균등한 간격 */
+  flex-wrap: wrap; /* 여러 줄로 나누지 않음 */
+}
+
+.lk {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500; 
+  padding: 0px;
+  transition: transform 0.3s ease;
+}
+
+.lk:hover {
+  transform: scale(1.2);
 }
 
 /* 작은 화면 (예: 핸드폰)을 위한 스타일 */
@@ -178,5 +200,15 @@ a#pri:hover {
     font-size: 5px; /* or whatever size you find appropriate */
     max-width: 100%;
     max-height: 1000px; /* Adjust as needed */
+  }
+  
+  .link-container {
+    flex-direction: column; /* 모바일에서는 수직으로 링크 배열 */
+    align-items: center; /* 중앙 정렬 */
+    gap: 20px;
+  }
+
+  .lk {
+    font-size: 18px; /* 모바일에서는 폰트 크기 조절 */
   }
 }

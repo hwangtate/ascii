@@ -54,9 +54,27 @@ pre {
 }
 
 .size{
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 
+.btn {
+  margin-left: 230px;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
+}
 /* 작은 화면 (예: 핸드폰)을 위한 스타일 */
 @media only screen and (max-width: 600px) {
   body {

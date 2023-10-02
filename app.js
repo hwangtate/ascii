@@ -55,6 +55,30 @@ app.get('/meme', (req, res) => {
   res.sendFile(__dirname + '/public/meme.html');
 });
 
+app.get('/cat', (req, res) => {
+  res.sendFile(__dirname + '/public/cat.html');
+});
+
+app.get('/dog', (req, res) => {
+  res.sendFile(__dirname + '/public/dog.html');
+});
+
+app.get('/person', (req, res) => {
+  res.sendFile(__dirname + '/public/person.html');
+});
+
+app.get('/animal', (req, res) => {
+  res.sendFile(__dirname + '/public/animal.html');
+});
+
+app.get('/baby', (req, res) => {
+  res.sendFile(__dirname + '/public/baby.html');
+});
+
+app.get('/best', (req, res) => {
+  res.sendFile(__dirname + '/public/best.html');
+});
+
 app.post('/', upload.single('image'), async (req, res) => {
   if (!req.file) {
       return res.render('index', { asciiArt: 'No image uploaded' });

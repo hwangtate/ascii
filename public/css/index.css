@@ -201,12 +201,6 @@ a#pri:hover {
     max-width: 100%;
     max-height: 1000px; /* Adjust as needed */
   }
-  
-  .link-container {
-    flex-direction: column; /* 모바일에서는 수직으로 링크 배열 */
-    align-items: center; /* 중앙 정렬 */
-    gap: 20px;
-  }
 
   .lk {
     font-size: 18px; /* 모바일에서는 폰트 크기 조절 */

@@ -51,6 +51,10 @@ app.get('/privacy', (req, res) => {
   res.sendFile(__dirname + '/public/privacy.html');
 });
 
+app.get('/meme', (req, res) => {
+  res.sendFile(__dirname + '/public/meme.html');
+});
+
 app.post('/', upload.single('image'), async (req, res) => {
   if (!req.file) {
       return res.render('index', { asciiArt: 'No image uploaded' });

@@ -76,7 +76,7 @@ pre {
   background-color: #555;
 }
 /* 작은 화면 (예: 핸드폰)을 위한 스타일 */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   body {
       font-size: 14px; /* 기본 폰트 크기를 줄입니다. */
   }

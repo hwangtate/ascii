@@ -209,7 +209,7 @@ a#pri:hover {
 
 @media only screen and (min-width: 610px) {
   pre {
-    font-size: 5px;
+    font-size: 10px;
     max-width: 100%;
   }
 }

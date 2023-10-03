@@ -95,3 +95,35 @@ pre {
     margin-left: 0px;
   }
 }
+
+@media (max-width: 700px) {
+  body {
+      font-size: 14px; /* 기본 폰트 크기를 줄입니다. */
+  }
+
+  #title {
+      font-size: 32px; /* 제목 크기를 줄입니다. */
+  }
+
+  pre {
+    font-size: 5px; /* or whatever size you find appropriate */
+    max-width: 100%;
+    max-height: 1000px; /* Adjust as needed */
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+      font-size: 14px; /* 기본 폰트 크기를 줄입니다. */
+  }
+
+  #title {
+      font-size: 32px; /* 제목 크기를 줄입니다. */
+  }
+
+  pre {
+    font-size: 5px; /* or whatever size you find appropriate */
+    max-width: 100%;
+    max-height: 1000px; /* Adjust as needed */
+  }
+}

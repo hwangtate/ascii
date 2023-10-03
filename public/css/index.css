@@ -209,9 +209,7 @@ a#pri:hover {
 
 @media only screen and (min-width: 610px) {
   pre {
-    font-size: 1px;
+    font-size: 5px;
     max-width: 100%;
-    max-height: 500px;
-    font-family: 'Courier New', monospace;
   }
 }

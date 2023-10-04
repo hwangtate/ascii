@@ -79,6 +79,22 @@ app.get('/best', (req, res) => {
   res.sendFile(__dirname + '/public/best.html');
 });
 
+app.get('/spaceout', (req, res) => {
+  res.sendFile(__dirname + '/public/spaceout.html');
+});
+
+app.get('/art', (req, res) => {
+  res.sendFile(__dirname + '/public/art.html');
+});
+
+app.get('/ss', (req, res) => {
+  res.sendFile(__dirname + '/public/ss.html');
+});
+
+app.get('/lb', (req, res) => {
+  res.sendFile(__dirname + '/public/lb.html');
+});
+
 app.post('/', upload.single('image'), async (req, res) => {
   if (!req.file) {
       return res.render('index', { asciiArt: 'No image uploaded' });

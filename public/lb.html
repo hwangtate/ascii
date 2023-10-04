@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <meta name="description" content="Pink Night">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/lb.css">
+  <link rel="icon" href="/AG.ico" type="image/x-icon">
+  <title>Pink Night</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5063785223468320"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="night-sky">
+
+  </div>
+  <script>
+    const nightSky = document.querySelector('.night-sky');
+
+    // 1000개의 별을 무작위 위치에 생성
+    for (let i = 0; i < 1000; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.width = `${Math.random() + 0.5}px`; // 별의 크기를 무작위로 설정
+        star.style.height = star.style.width;
+        nightSky.appendChild(star);
+    }
+  </script>
+</body>
+</html>
